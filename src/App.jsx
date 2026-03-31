@@ -107,9 +107,17 @@ export default function ConstruccionLandingPage() {
 
     <div className="flex flex-1 items-center justify-center">
       <div className="text-center px-6">
-        <h1 className="text-4xl font-semibold text-white md:text-6xl">
-          Construcción y reformas con acabados profesionales
-        </h1>
+     <h1
+  style={{
+    background: "linear-gradient(180deg,#f5e6a8,#d4af37,#b8962e)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    marginTop: "220px",
+    fontWeight: "700"
+  }}
+>
+  Construcción y reformas con acabados profesionales
+</h1>
         <p className="mt-6 text-lg text-zinc-200 max-w-2xl mx-auto">
           Calidad, compromiso y resultados que se notan desde el primer día.
         </p>
