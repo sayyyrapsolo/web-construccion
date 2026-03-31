@@ -126,7 +126,7 @@ export default function ConstruccionLandingPage() {
 
 {/* botones debajo de la portada */}
 <section className="bg-zinc-950 py-10">
-  <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-4 px-6">
+  <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-4 px-6 -mt-10">
 
     <a
       href="#servicios"
