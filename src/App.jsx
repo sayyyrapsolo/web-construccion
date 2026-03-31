@@ -88,39 +88,68 @@ export default function ConstruccionLandingPage() {
         </svg>
         WhatsApp
       </a>
-      <section className="relative h-[80vh] w-full overflow-hidden">
+      <section className="relative h-[85vh] w-full overflow-hidden">
   <img
     src="/portada.jpg"
     alt="JC Reformas portada"
     className="absolute inset-0 h-full w-full object-cover"
   />
 
-  <div className="absolute inset-0 bg-black/55" />
+  {/* degradado que fusiona con el fondo de la web */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/55 to-zinc-950" />
 
   <div className="relative z-10 flex h-full flex-col">
     <header className="flex items-center justify-between px-6 py-6 lg:px-12">
       <div className="text-lg font-semibold tracking-wide text-amber-400">
         JC REFORMAS
       </div>
-
-      <nav className="flex gap-8 text-sm text-white">
-        <a href="#servicios" className="transition hover:text-amber-400">Servicios</a>
-        <a href="#proyectos" className="transition hover:text-amber-400">Proyectos</a>
-        <a href="#proceso" className="transition hover:text-amber-400">Proceso</a>
-        <a href="#contacto" className="transition hover:text-amber-400">Contacto</a>
-      </nav>
     </header>
 
     <div className="flex flex-1 items-center justify-center">
-      <div className="text-center">
+      <div className="text-center px-6">
         <h1 className="text-4xl font-semibold text-white md:text-6xl">
           Construcción y reformas con acabados profesionales
         </h1>
-        <p className="mt-6 text-lg text-zinc-200">
+        <p className="mt-6 text-lg text-zinc-200 max-w-2xl mx-auto">
           Calidad, compromiso y resultados que se notan desde el primer día.
         </p>
       </div>
     </div>
+  </div>
+</section>
+
+{/* botones debajo de la portada */}
+<section className="bg-zinc-950 py-10">
+  <div className="mx-auto flex max-w-5xl flex-wrap justify-center gap-4 px-6">
+
+    <a
+      href="#servicios"
+      className="rounded-2xl bg-amber-400 px-6 py-3 text-sm font-semibold text-black shadow-md transition hover:scale-105"
+    >
+      Servicios
+    </a>
+
+    <a
+      href="#proyectos"
+      className="rounded-2xl border border-zinc-700 px-6 py-3 text-sm font-semibold text-white transition hover:border-amber-400 hover:text-amber-400"
+    >
+      Proyectos
+    </a>
+
+    <a
+      href="#proceso"
+      className="rounded-2xl border border-zinc-700 px-6 py-3 text-sm font-semibold text-white transition hover:border-amber-400 hover:text-amber-400"
+    >
+      Proceso
+    </a>
+
+    <a
+      href="#contacto"
+      className="rounded-2xl border border-zinc-700 px-6 py-3 text-sm font-semibold text-white transition hover:border-amber-400 hover:text-amber-400"
+    >
+      Contacto
+    </a>
+
   </div>
 </section>
 
