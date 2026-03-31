@@ -93,7 +93,7 @@ export default function ConstruccionLandingPage() {
         <div className="relative mx-auto max-w-7xl px-6 py-6 lg:px-8">
           <header className="flex items-center justify-between">
             <div>
-              <div className="text-sm uppercase tracking-[0.35em] text-amber-400">Constructa Pro</div>
+              <div className="text-sm uppercase tracking-[0.35em] text-amber-400">JC Reformas Pro</div>
               <div className="text-xs text-zinc-400">Ingeniería · Reformas · Ejecución</div>
             </div>
             <nav className="hidden gap-8 text-sm text-zinc-300 md:flex">
