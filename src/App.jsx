@@ -71,12 +71,21 @@ export default function ConstruccionLandingPage() {
 
   return (
     <div className="min-h-screen bg-zinc-950 text-white">
+      <a
+        href="https://wa.me/34600123456?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20de%20construcci%C3%B3n"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl shadow-2xl transition hover:scale-110 hover:bg-green-400"
+      >
+        💬
+      </a>
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.22),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_22%)]" />
         <div className="relative mx-auto max-w-7xl px-6 py-6 lg:px-8">
           <header className="flex items-center justify-between">
             <div>
-              <div className="text-sm uppercase tracking-[0.35em] text-amber-400">JC Reformas Pro</div>
+              <div className="text-sm uppercase tracking-[0.35em] text-amber-400">Constructa Pro</div>
               <div className="text-xs text-zinc-400">Ingeniería · Reformas · Ejecución</div>
             </div>
             <nav className="hidden gap-8 text-sm text-zinc-300 md:flex">
