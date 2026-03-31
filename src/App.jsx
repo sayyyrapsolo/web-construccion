@@ -1,0 +1,335 @@
+export default function ConstruccionLandingPage() {
+  const services = [
+    {
+      title: "Obra nueva",
+      desc: "Proyectos residenciales y comerciales ejecutados con planificación precisa, control de costes y entregas realistas.",
+      icon: "🏗️",
+    },
+    {
+      title: "Reformas integrales",
+      desc: "Transformamos viviendas, locales y oficinas con diseño funcional, acabados sólidos y una ejecución limpia.",
+      icon: "🧱",
+    },
+    {
+      title: "Mantenimiento técnico",
+      desc: "Soluciones preventivas y correctivas para comunidades, naves y edificios que no pueden permitirse sorpresas.",
+      icon: "🛠️",
+    },
+    {
+      title: "Dirección de proyecto",
+      desc: "Coordinación de gremios, seguimiento de hitos y comunicación clara para que todo avance sin caos de obra.",
+      icon: "📐",
+    },
+  ];
+
+  const projects = [
+    {
+      title: "Residencial Horizonte",
+      category: "Vivienda",
+      result: "+32 viviendas entregadas",
+      image: "/proyecto1.jpeg",
+    },
+    {
+      title: "Centro Logístico Delta",
+      category: "Industrial",
+      result: "Plazo optimizado un 18%",
+      image: "/proyecto2.jpeg",
+    },
+    {
+      title: "Oficinas Áurea",
+      category: "Corporativo",
+      result: "Reforma integral llave en mano",
+      image: "/proyecto3.jpeg",
+    },
+  ];
+
+  const stats = [
+    { value: "+15", label: "Años construyendo" },
+    { value: "+240", label: "Proyectos completados" },
+    { value: "98%", label: "Clientes satisfechos" },
+    { value: "24h", label: "Respuesta inicial" },
+  ];
+
+  const steps = [
+    {
+      title: "Escuchamos",
+      desc: "Entendemos la necesidad real del cliente, no solo el plano bonito.",
+    },
+    {
+      title: "Planificamos",
+      desc: "Definimos fases, tiempos, materiales y presupuesto sin humo.",
+    },
+    {
+      title: "Ejecutamos",
+      desc: "Coordinamos la obra con seguimiento continuo y control de calidad.",
+    },
+    {
+      title: "Entregamos",
+      desc: "Cerramos con revisión final, documentación y soporte posterior.",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-zinc-950 text-white">
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.22),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_22%)]" />
+        <div className="relative mx-auto max-w-7xl px-6 py-6 lg:px-8">
+          <header className="flex items-center justify-between">
+            <div>
+              <div className="text-sm uppercase tracking-[0.35em] text-amber-400">Jotita JC Constructora Pro</div>
+              <div className="text-xs text-zinc-400">Ingeniería · Reformas · Ejecución</div>
+            </div>
+            <nav className="hidden gap-8 text-sm text-zinc-300 md:flex">
+              <a href="#servicios" className="transition hover:text-white">Servicios</a>
+              <a href="#proyectos" className="transition hover:text-white">Proyectos</a>
+              <a href="#proceso" className="transition hover:text-white">Proceso</a>
+              <a href="#contacto" className="transition hover:text-white">Contacto</a>
+            </nav>
+          </header>
+
+          <div className="grid items-center gap-12 py-16 lg:grid-cols-[1.2fr_0.8fr] lg:py-24">
+            <div>
+              <div className="mb-4 inline-flex items-center rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-2 text-sm text-amber-300">
+                Construcción con cabeza. Diseño con intención.
+              </div>
+              <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white md:text-6xl">
+                La web de una constructora que transmite <span className="text-amber-400">solidez</span>, confianza y resultados.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
+                Desde obra nueva hasta reformas integrales, ayudamos a empresas y particulares a construir mejor, con procesos claros, tiempos realistas y una imagen profesional que no parece hecha en 2007. Ya tocaba.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#contacto"
+                  className="rounded-2xl bg-amber-400 px-6 py-3 text-center font-medium text-zinc-950 transition hover:scale-[1.02]"
+                >
+                  Solicitar presupuesto
+                </a>
+                <a
+                  href="#proyectos"
+                  className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-medium text-white transition hover:bg-white/10"
+                >
+                  Ver proyectos
+                </a>
+              </div>
+
+              <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                {stats.map((stat) => (
+                  <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+                    <div className="text-2xl font-semibold text-amber-400">{stat.value}</div>
+                    <div className="mt-1 text-sm text-zinc-300">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative">
+              <img
+                src="/proyecto4.jpeg"
+                alt="Proyecto de construcción"
+                className="mb-4 h-56 w-full rounded-2xl object-cover"
+              />
+              <div className="absolute -inset-4 rounded-[2rem] bg-amber-400/10 blur-2xl" />
+              <div className="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-zinc-900 to-zinc-800 p-5 shadow-2xl">
+                <div className="rounded-[1.5rem] border border-white/10 bg-zinc-950 p-5">
+                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                    <div>
+                      <div className="text-sm text-zinc-400">Proyecto destacado</div>
+                      <div className="mt-1 text-xl font-semibold">Edificio Nexus</div>
+                    </div>
+                    <div className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
+                      En plazo
+                    </div>
+                  </div>
+
+                  <div className="mt-5 grid gap-4">
+                    <div className="rounded-2xl bg-white/5 p-4">
+                      <div className="text-sm text-zinc-400">Tipo</div>
+                      <div className="mt-1 font-medium">Rehabilitación estructural + fachada</div>
+                    </div>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <div className="rounded-2xl bg-white/5 p-4">
+                        <div className="text-sm text-zinc-400">Duración</div>
+                        <div className="mt-1 font-medium">8 meses</div>
+                      </div>
+                      <div className="rounded-2xl bg-white/5 p-4">
+                        <div className="text-sm text-zinc-400">Ubicación</div>
+                        <div className="mt-1 font-medium">Madrid</div>
+                      </div>
+                    </div>
+                    <div className="rounded-2xl bg-amber-400/10 p-4">
+                      <div className="text-sm text-amber-300">Valor diferencial</div>
+                      <div className="mt-1 text-sm leading-7 text-zinc-200">
+                        Seguimiento semanal, control visual de avance, coordinación de proveedores y comunicación clara con el cliente en cada fase.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="max-w-2xl">
+          <div className="text-sm uppercase tracking-[0.3em] text-amber-400">Servicios</div>
+          <h2 className="mt-4 text-3xl font-semibold md:text-4xl">Lo que hacemos y lo que hacemos bien</h2>
+          <p className="mt-4 text-zinc-400">
+            Nada de páginas que prometen de todo y luego parecen un folleto triste. Aquí el usuario entiende rápido qué ofreces, por qué confiar y qué paso dar después.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="group rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-amber-400/30 hover:bg-white/[0.05]"
+            >
+              <div className="text-3xl">{service.icon}</div>
+              <h3 className="mt-5 text-xl font-semibold">{service.title}</h3>
+              <p className="mt-3 leading-7 text-zinc-400">{service.desc}</p>
+              <div className="mt-5 text-sm font-medium text-amber-400">Más información</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="proyectos" className="border-y border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl">
+              <div className="text-sm uppercase tracking-[0.3em] text-amber-400">Proyectos</div>
+              <h2 className="mt-4 text-3xl font-semibold md:text-4xl">Construcciones que venden confianza antes de la primera llamada</h2>
+            </div>
+            <a href="#contacto" className="text-sm font-medium text-zinc-300 transition hover:text-white">
+              Hablar con un técnico →
+            </a>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {projects.map((project, index) => (
+              <div key={project.title} className="overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900">
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt="Proyecto construcción"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute bottom-4 left-4 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-xs text-zinc-200">
+                    Caso {String(index + 1).padStart(2, "0")}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-amber-400">{project.category}</div>
+                  <h3 className="mt-2 text-2xl font-semibold">{project.title}</h3>
+                  <p className="mt-4 text-zinc-400">
+                    Proyecto ejecutado con foco en tiempos, seguridad, coordinación y acabados duraderos.
+                  </p>
+                  <div className="mt-5 rounded-2xl bg-white/5 p-4 text-sm text-zinc-200">{project.result}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <div className="text-sm uppercase tracking-[0.3em] text-amber-400">Proceso</div>
+            <h2 className="mt-4 text-3xl font-semibold md:text-4xl">Un flujo simple, claro y sin teatro corporativo</h2>
+            <p className="mt-4 leading-8 text-zinc-400">
+              La experiencia está pensada para que el usuario encuentre rápido la información clave: servicios, pruebas de confianza, proyectos y un formulario directo. Menos ruido, más conversión.
+            </p>
+          </div>
+
+          <div className="grid gap-5">
+            {steps.map((step, index) => (
+              <div key={step.title} className="flex gap-4 rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-amber-400 font-semibold text-zinc-950">
+                  {index + 1}
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold">{step.title}</h3>
+                  <p className="mt-2 leading-7 text-zinc-400">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+        <div className="grid gap-6 rounded-[2rem] border border-white/10 bg-gradient-to-r from-amber-400 to-yellow-300 p-8 text-zinc-950 lg:grid-cols-[1.1fr_0.9fr] lg:p-10">
+          <div>
+            <div className="text-sm font-semibold uppercase tracking-[0.25em]">Por qué funciona esta web</div>
+            <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Diseñada para transmitir orden, autoridad y contacto rápido</h2>
+            <p className="mt-4 max-w-2xl text-base leading-8 text-zinc-800">
+              Visual potente, jerarquía clara, llamadas a la acción visibles y un tono serio pero actual. Lo bastante elegante para una promotora, lo bastante práctico para una empresa que quiere captar clientes sin marearlos.
+            </p>
+          </div>
+          <div className="grid gap-4">
+            <div className="rounded-[1.5rem] bg-black/10 p-5">
+              <div className="text-sm">Ideal para</div>
+              <div className="mt-1 font-semibold">Constructoras, reformas, estudios técnicos y promotoras</div>
+            </div>
+            <div className="rounded-[1.5rem] bg-black/10 p-5">
+              <div className="text-sm">Siguiente paso lógico</div>
+              <div className="mt-1 font-semibold">Conectarla a WhatsApp, formulario real y portfolio editable</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" className="border-t border-white/10 bg-zinc-900/70">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+          <div>
+            <div className="text-sm uppercase tracking-[0.3em] text-amber-400">Contacto</div>
+            <h2 className="mt-4 text-3xl font-semibold md:text-4xl">Cuéntanos tu proyecto</h2>
+            <p className="mt-4 max-w-xl leading-8 text-zinc-400">
+              Obra nueva, reforma, rehabilitación o mantenimiento. Escríbenos y te respondemos con una propuesta seria. Sin venderte castillos de hormigón en el aire.
+            </p>
+            <div className="mt-8 space-y-4 text-zinc-300">
+              <div>📍 Madrid, España</div>
+              <div>📞 +34 600 123 456</div>
+              <div>✉️ contacto@constructapro.es</div>
+            </div>
+          </div>
+
+          <form className="grid gap-4 rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
+            <div className="grid gap-4 md:grid-cols-2">
+              <input
+                className="rounded-2xl border border-white/10 bg-zinc-950 px-4 py-3 outline-none transition focus:border-amber-400"
+                placeholder="Nombre"
+              />
+              <input
+                className="rounded-2xl border border-white/10 bg-zinc-950 px-4 py-3 outline-none transition focus:border-amber-400"
+                placeholder="Teléfono"
+              />
+            </div>
+            <input
+              className="rounded-2xl border border-white/10 bg-zinc-950 px-4 py-3 outline-none transition focus:border-amber-400"
+              placeholder="Correo electrónico"
+            />
+            <input
+              className="rounded-2xl border border-white/10 bg-zinc-950 px-4 py-3 outline-none transition focus:border-amber-400"
+              placeholder="Tipo de proyecto"
+            />
+            <textarea
+              rows={5}
+              className="rounded-2xl border border-white/10 bg-zinc-950 px-4 py-3 outline-none transition focus:border-amber-400"
+              placeholder="Cuéntanos qué necesitas"
+            />
+            <button
+              type="button"
+              className="rounded-2xl bg-amber-400 px-6 py-3 font-medium text-zinc-950 transition hover:scale-[1.01]"
+            >
+              Enviar solicitud
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+  );
+}
