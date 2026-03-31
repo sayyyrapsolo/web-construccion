@@ -112,7 +112,7 @@ export default function ConstruccionLandingPage() {
     background: "linear-gradient(180deg,#f5e6a8,#d4af37,#b8962e)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
-    marginTop: "220px",
+    marginTop: "260px",
     fontWeight: "700"
   }}
 >
