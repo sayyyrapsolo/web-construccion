@@ -101,7 +101,7 @@ export default function ConstruccionLandingPage() {
   <div className="relative z-10 flex h-full flex-col">
     <header className="flex items-center justify-between px-6 py-6 lg:px-12">
       <div className="text-lg font-semibold tracking-wide text-amber-400">
-        JC REFORMAS
+      
       </div>
     </header>
 
@@ -116,7 +116,7 @@ export default function ConstruccionLandingPage() {
     fontWeight: "700"
   }}
 >
-  Construcción y reformas con acabados profesionales
+  Reformas con acabados profesionales
 </h1>
         <p className="mt-6 text-lg text-zinc-200 max-w-2xl mx-auto">
           Calidad, compromiso y resultados que se notan desde el primer día.
