@@ -1,13 +1,7 @@
-# Editor files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
+# Enode_modules
+dist
+dist-ssr
 .vs
 *.vsidx
+.env
+.env.*
