@@ -72,13 +72,21 @@ export default function ConstruccionLandingPage() {
   return (
     <div className="min-h-screen bg-zinc-950 text-white">
       <a
-        href="https://wa.me/34600123456?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20de%20construcci%C3%B3n"
+        href="https://wa.me/34642540901?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20de%20construcci%C3%B3n"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar por WhatsApp"
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl shadow-2xl transition hover:scale-110 hover:bg-green-400"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-[#25D366] px-5 py-3 font-medium text-white shadow-2xl transition hover:scale-105 hover:bg-[#1ebe5d]"
       >
-        💬
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          className="h-6 w-6"
+          fill="currentColor"
+        >
+          <path d="M19.11 17.36c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.13-.17.19-.33.21-.62.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.33.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.03 2.81 1.17 3 .15.19 2.02 3.08 4.9 4.32.69.3 1.23.48 1.65.61.69.22 1.31.19 1.8.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34zM16.02 3C9.94 3 5 7.94 5 14c0 2.46.8 4.73 2.17 6.57L6 29l8.62-1.13A10.93 10.93 0 0016.02 29C22.06 29 27 24.06 27 18.02 27 11.94 22.06 7 16.02 7z"/>
+        </svg>
+        WhatsApp
       </a>
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.22),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_22%)]" />
@@ -301,7 +309,7 @@ export default function ConstruccionLandingPage() {
             </p>
             <div className="mt-8 space-y-4 text-zinc-300">
               <div>📍 Madrid, España</div>
-              <div>📞 +34 600 123 456</div>
+              <div>📞 +34 642 54 09 01</div>
               <div>✉️ contacto@constructapro.es</div>
             </div>
           </div>
