@@ -118,9 +118,7 @@ export default function ConstruccionLandingPage() {
 >
   Reformas con acabados profesionales
 </h1>
-        <p className="mt-6 text-lg text-zinc-200 max-w-2xl mx-auto">
-          Calidad, compromiso y resultados que se notan desde el primer día.
-        </p>
+       
       </div>
     </div>
   </div>
