@@ -88,105 +88,41 @@ export default function ConstruccionLandingPage() {
         </svg>
         WhatsApp
       </a>
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,158,11,0.22),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_22%)]" />
-        <div className="relative mx-auto max-w-7xl px-6 py-6 lg:px-8">
-          <header className="flex items-center justify-between">
-            <div>
-              <div className="text-sm uppercase tracking-[0.35em] text-amber-400">JC Reformas Pro</div>
-              <div className="text-xs text-zinc-400">Ingeniería · Reformas · Ejecución</div>
-            </div>
-            <nav className="hidden gap-8 text-sm text-zinc-300 md:flex">
-              <a href="#servicios" className="transition hover:text-white">Servicios</a>
-              <a href="#proyectos" className="transition hover:text-white">Proyectos</a>
-              <a href="#proceso" className="transition hover:text-white">Proceso</a>
-              <a href="#contacto" className="transition hover:text-white">Contacto</a>
-            </nav>
-          </header>
+      <section className="relative h-[80vh] w-full overflow-hidden">
+  <img
+    src="/portada.jpg"
+    alt="JC Reformas portada"
+    className="absolute inset-0 h-full w-full object-cover"
+  />
 
-          <div className="grid items-center gap-12 py-16 lg:grid-cols-[1.2fr_0.8fr] lg:py-24">
-            <div>
-              <div className="mb-4 inline-flex items-center rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-2 text-sm text-amber-300">
-                Construcción con cabeza. Diseño con intención.
-              </div>
-              <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white md:text-6xl">
-                La web de una constructora que transmite <span className="text-amber-400">solidez</span>, confianza y resultados.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-                Desde obra nueva hasta reformas integrales, ayudamos a empresas y particulares a construir mejor, con procesos claros, tiempos realistas y una imagen profesional que no parece hecha en 2007. Ya tocaba.
-              </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#contacto"
-                  className="rounded-2xl bg-amber-400 px-6 py-3 text-center font-medium text-zinc-950 transition hover:scale-[1.02]"
-                >
-                  Solicitar presupuesto
-                </a>
-                <a
-                  href="#proyectos"
-                  className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-medium text-white transition hover:bg-white/10"
-                >
-                  Ver proyectos
-                </a>
-              </div>
+  <div className="absolute inset-0 bg-black/55" />
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
-                    <div className="text-2xl font-semibold text-amber-400">{stat.value}</div>
-                    <div className="mt-1 text-sm text-zinc-300">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
+  <div className="relative z-10 flex h-full flex-col">
+    <header className="flex items-center justify-between px-6 py-6 lg:px-12">
+      <div className="text-lg font-semibold tracking-wide text-amber-400">
+        JC REFORMAS
+      </div>
 
-            <div className="relative">
-              <img
-                src="/proyecto4.jpeg"
-                alt="Proyecto de construcción"
-                className="mb-4 h-56 w-full rounded-2xl object-cover"
-              />
-              <div className="absolute -inset-4 rounded-[2rem] bg-amber-400/10 blur-2xl" />
-              <div className="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-zinc-900 to-zinc-800 p-5 shadow-2xl">
-                <div className="rounded-[1.5rem] border border-white/10 bg-zinc-950 p-5">
-                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                    <div>
-                      <div className="text-sm text-zinc-400">Proyecto destacado</div>
-                      <div className="mt-1 text-xl font-semibold">Edificio Nexus</div>
-                    </div>
-                    <div className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
-                      En plazo
-                    </div>
-                  </div>
+      <nav className="flex gap-8 text-sm text-white">
+        <a href="#servicios" className="transition hover:text-amber-400">Servicios</a>
+        <a href="#proyectos" className="transition hover:text-amber-400">Proyectos</a>
+        <a href="#proceso" className="transition hover:text-amber-400">Proceso</a>
+        <a href="#contacto" className="transition hover:text-amber-400">Contacto</a>
+      </nav>
+    </header>
 
-                  <div className="mt-5 grid gap-4">
-                    <div className="rounded-2xl bg-white/5 p-4">
-                      <div className="text-sm text-zinc-400">Tipo</div>
-                      <div className="mt-1 font-medium">Rehabilitación estructural + fachada</div>
-                    </div>
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <div className="rounded-2xl bg-white/5 p-4">
-                        <div className="text-sm text-zinc-400">Duración</div>
-                        <div className="mt-1 font-medium">8 meses</div>
-                      </div>
-                      <div className="rounded-2xl bg-white/5 p-4">
-                        <div className="text-sm text-zinc-400">Ubicación</div>
-                        <div className="mt-1 font-medium">Madrid</div>
-                      </div>
-                    </div>
-                    <div className="rounded-2xl bg-amber-400/10 p-4">
-                      <div className="text-sm text-amber-300">Valor diferencial</div>
-                      <div className="mt-1 text-sm leading-7 text-zinc-200">
-                        Seguimiento semanal, control visual de avance, coordinación de proveedores y comunicación clara con el cliente en cada fase.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="flex flex-1 items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl font-semibold text-white md:text-6xl">
+          Construcción y reformas con acabados profesionales
+        </h1>
+        <p className="mt-6 text-lg text-zinc-200">
+          Calidad, compromiso y resultados que se notan desde el primer día.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="servicios" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="max-w-2xl">
